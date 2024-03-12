@@ -39,10 +39,7 @@ class ShoppingCart {
 
     public double calculateTotal() {
         //Implementar a lógica de cálculo do total
-        double total = 0;
-        for (double price : products){
-            total += price;
-        }
+        double total = products.stream().reduce(0.0, Double::sum);
         return discountStrategy.applyDiscount(total);  // Retornar o total calculado
     }
 }

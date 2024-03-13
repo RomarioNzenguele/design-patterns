@@ -76,6 +76,6 @@ public class Strategy2 {
         }
 
         // Chamar o método calculateTotal e exibir o resultado
-        System.out.println("Total da compra:" + cart.calculateTotal());
+        System.out.println("Total da compra: R$" + cart.calculateTotal());
     }
 }
